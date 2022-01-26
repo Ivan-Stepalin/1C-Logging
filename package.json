@@ -1,0 +1,74 @@
+{
+  "name": "alkir_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drualus/alkir_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drualus/alkir_frontend/issues"
+  },
+  "homepage": "https://github.com/Drualus/alkir_frontend#readme",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@babel/runtime": "^7.15.4",
+    "antd": "^4.16.13",
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-awesome-query-builder": "^4.7.0",
+    "react-css-theme-switcher": "^0.3.0",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-postcss": "^9.0.1",
+    "html-webpack-plugin": "^5.3.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "less-plugin-npm-import": "^2.1.0",
+    "prettier": "^2.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.2.1"
+  }
+}

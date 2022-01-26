@@ -1,0 +1,38 @@
+.trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logo {
+    height: 32px;
+    margin: 16px;
+    padding: 22px 0 15px 17px;
+}
+
+.label {
+    color: #1F1F1F;
+}
+
+.group {
+    background: #1F1F1F;
+    border: 1px solid #141414;
+}
+
+.rule.group-or-rule {
+    background: #434343;
+}
+
+.logo .logoTitle {
+    color: #7CB305;
+}
+
+.theme-switch {
+    padding: 0 24px;
+}
+
+html {
+    scroll-padding-top: 73px;
+}

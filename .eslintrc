@@ -1,0 +1,40 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "globalReturn": true,
+    "requireConfigFile": false
+  },
+  "rules": {
+    "react/prop-types": 1,
+    //warrning when props are missing types assignment
+    "no-unused-vars": "warn",
+    //warrning when no used var used
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }
+    ]
+  }
+}
